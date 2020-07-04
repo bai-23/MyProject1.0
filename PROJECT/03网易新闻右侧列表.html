@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>news</title>
+    <link rel="stylesheet" href="../CSS-2布局/CSS-reset/reset.css">
+    <style>
+        body{
+            background-color: azure;
+        }
+
+        /* 设置容器的样式 */
+        .news{
+            width: 304px;
+            height: 399px;
+            margin: 10px auto;/* 设置居中 */
+            background-color: bisque;
+            border-top: 1px gray solid;
+        }
+
+        /* 设置title */
+        .title{
+            height: 30px;
+            /* margin-top: 1px; */
+
+            /* 为了边框（红色）与文字宽度一致，需要将h1转换为行内块元素 */
+            display: inline-block;
+            border-top: 1px red solid;
+
+            /* 设置上移，使红色与灰色重叠 */
+            margin-top: -1px;
+            font-weight: bold;/* 加粗 */
+            
+            padding-top: 10px;
+            /* 设置上边距 */
+
+
+        }
+        .title a{
+            /* border-top: 1px red solid; */
+            margin-top: 5px;
+        }
+
+        a{
+            text-decoration: none;
+            color: black;
+            
+        }
+        .list li a:hover{
+            color: red;
+        }
+
+        .news .img{
+            height: 200px;
+            width: px;
+            border: 1px burlywood solid;
+            margin: 0px auto;/* 设置居中 */
+
+        }
+        /* 设置图片内文字效果 */
+        .img h2{
+            margin-top: -35px;
+            color: aliceblue;
+            font-size: larger;
+            font-weight: bold;
+            padding-left: 85px;
+        }
+
+        .list{
+            margin-top: 20px;
+
+            padding-left: 20px;
+
+            /* list-style: outside; */
+            /* 设置项目符号 */
+        }
+        .list li{
+            margin-bottom: 13px;
+            /* li行距 */
+        }
+
+        .list li a::before{
+            content: "●  ";
+            color: rgb(170, 163, 148);
+            font-size: 5px;
+            /* 所有li元素前加上 */
+        }
+
+        .list li a{
+            font-size: 17px;
+            color: blue;
+        }
+
+        .box{
+            height: 100px;
+            width: 100px;
+            border-radius: 20px;
+            background: linear-gradient(315deg, #dba64b, #ffc559);
+            box-shadow:  -20px -20px 24px #775a29, 
+             20px 20px 24px #ffff7d;
+        }
+    </style>
+</head>
+<body>
+    <!-- 创建外层容器 -->
+    <div class="news">
+        <!-- 创建标题 -->
+        <h1 class="title"><a href="#">我的面板</a></h1>
+
+        <!-- 创建图片容器 -->
+        <div class="img">
+            <a href="#">
+                <img src="./练习图片/DSC_4774.jpg" alt="myphoto" height="200px">
+
+            <!-- 图片标题 -->
+            <h2>"夏日の光"</h2>
+            </a>
+        </div>
+
+        <!-- 新闻列表 -->
+        <ul class="list">
+            <li><a href="#">打你钩子打你钩子打你钩子</a></li>
+            <li><a href="#">打你钩子打你钩子打你钩子</a></li>
+            <li><a href="#">打你钩子打你钩子打你钩子</a></li>
+            <li><a href="#">打你钩子打你钩子打你钩子</a></li>
+        </ul>
+    </div>
+    <div class="box">
+
+    </div>
+</body>
+</html>

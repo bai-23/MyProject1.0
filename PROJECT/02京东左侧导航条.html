@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>导航条</title>
+    <link rel="stylesheet" href="../CSS-2布局/CSS-reset/reset.css">
+    <style>
+        body{
+            background-color: bisque;
+            /* 设置页面背景 */
+        }
+        .meue{
+            width: 200px;
+            /* height: 100px; */
+            padding: 5px;
+            background-color: rgb(194, 224, 223);
+            margin: 50px auto;
+            border: 3px yellow solid;
+        }
+        .meue .item{
+            height: 25px;
+            line-height: 25px;
+            /*让文字在父元素里垂直居中  */
+
+            padding-left: 5px;
+
+        }
+
+        .meue:hover{
+            background-color: burlywood;
+        }
+        .meue .item a:hover{
+            background-color: gray;
+            color: brown;
+        }
+        .item a{
+            color: black;
+            /* 字体颜色 */
+            text-decoration: none;
+            /* 去下划线 */
+            
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 创建一个容器 nav、div、ul -->
+    <nav class="meue">
+        <diV class="item">
+            <a href="https://www.moulem.com">Home</a>
+        </diV>
+        <diV class="item">
+            <a href="#">我的资料</a> |
+            <a href="#">简介</a> |
+            <a href="#">学历</a>
+        </diV>
+        <diV class="item">
+            <a href="#">技能</a> |
+            <a href="#">爱好</a>
+        </diV>
+        <diV class="item">
+            <a href="#">联系方式</a> |
+            <a href="#">地址</a>
+        </diV>
+    </nav class="meue">
+</body>
+</html>
