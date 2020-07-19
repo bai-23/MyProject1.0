@@ -156,16 +156,19 @@
     display: inline-block;
     position: relative;
 }
+.mainuse .lefta i{
+    color: black;
+}
 .a1 .faimg{
-    left: 73px;
+    left: 75px;
     color: white;
 }
 .a2 .faimg{
-    left: 83px;
+    left: 85px;
     color: white;
 }
 .a3 .faimg{
-    left: 101px;
+    left: 103px;
     color: white;
 }
 .mainuse .left{
