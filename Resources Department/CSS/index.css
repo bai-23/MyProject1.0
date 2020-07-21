@@ -1,0 +1,264 @@
+html{
+    perspective: 800px;
+}
+/* 顶部容器 */
+.top-wrapper{
+    /* background-color: rgba(221, 117, 117, 0.3); */
+    height: 50px;
+    box-shadow: 0 0 3px;
+    background-image: url("../img/wallhaven-4dlyo0.jpg");
+    background-size: cover;
+    opacity: 0.8;
+    
+}
+.top-in{
+    width: 1420px;
+}
+/* 顶部左侧 */
+.top-in .top-left{
+    float: left;
+    width: 150pxpx;
+    height: 50px;
+    /* background-color: aquamarine; */
+    line-height: 50px;
+    font-size: 20px;
+}
+.top-in .top-left i{
+    font-size: 25px;
+    color: rgb(248, 244, 244);
+    animation: run-top infinite 1s linear;
+} 
+.top-in .top-left a{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bolder;
+    font-size: 23px;
+    color: white;
+}
+
+
+/* 顶部右侧 */
+.top-in .top-right{
+    float: right;
+    height: 50px;
+    /* background-color: chartreuse; */
+    line-height: 50px;
+}
+.top-right li{
+    float: left;
+    margin-right: 25px;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.top-right li a{
+    color: aliceblue;
+}
+.top-right .line{
+    color: rgba(240, 240, 240, 0.2);
+}
+.top-in .top-right .i2{
+    font-size: 25px;
+    color: rgb(224, 126, 35);
+}
+/* 部门简介下拉层 */
+.top-right .top-info{
+    position: absolute;
+    height: 200px;
+    width: 300px;
+    background-color: rgba(221, 117, 117, 0.3);
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+    border-top: none;
+    top: 50px;
+    transition: height 2s ease-out;
+    display: none;
+}
+.top-right li:hover a{
+    color: rgb(236, 132, 98);
+}
+li:hover  .top-info{
+    display: block;
+    animation: bumen .2s linear;
+}
+
+/* main部分 */
+.main-wrapper{
+    width: 100%;
+    height: 1500px;
+    background-image: url("");
+}
+.main-wrapper .main-top{
+    width: 100%;
+    height: 450px;
+    background-image: url("../img/img_主页背景.png");
+}
+.main-top .text-box{
+    height: 150px;
+    width: 600px;
+    margin: 0 auto;
+    position: relative;
+}
+.text-box p{
+    position: absolute;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+
+}
+.text1{
+    font-size: 32px;
+    margin-top: 30px;
+    margin-left: 23%;
+}
+.text2{
+    font-size: 30px;
+    margin-top: 90px;
+    margin-left: 40%;
+}
+.text-box:hover{
+    animation: text 1s  forwards;
+}
+
+/* main中间 */
+/* 立体图 */
+.cube{
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    margin-top: -200px;
+    /* 设置3d效果 */
+    transform-style: preserve-3d;
+    transform: rotateX(45deg) rotateZ(45deg);
+
+    animation:  run 20s infinite linear;
+}
+
+.cube > div{
+    width: 200px;
+    height: 200px;
+    /* 设置透明效果 */
+    opacity: 0.7;
+    position: absolute;
+}
+
+/* 去掉图片之间的边 */
+img{
+    vertical-align: top;
+}
+
+.box1{
+    transform: rotateY(90deg) translateZ(100px);
+}
+.box2{
+    transform: rotateY(-90deg) translateZ(100px);
+}
+.box3{
+    transform: rotateX(90deg) translateZ(100px);
+}
+.box4{
+    transform: rotateX(-90deg) translateZ(100px);
+}
+.box5{
+    transform: rotateY(180deg) translateZ(100px);
+}
+.box6{
+    transform: rotateY(0deg) translateZ(100px);
+}
+
+@keyframes run {
+    from{
+        transform: rotateX(0deg) rotateZ(0deg);
+    }
+    to{
+        transform: rotateX(1turn) rotateZ(1turn);
+    }
+}
+
+/* main中左部分 */
+.main-middle{
+    width: 1300px;
+}
+.main-left{
+    width: 900px;
+    height: 600px;
+    /* background-color: aquamarine; */
+    margin-top: -100px;
+    float: left;
+}
+.main-left .tbox1{
+    width: 197px;
+    height: 95px;
+    margin-bottom: 5px;
+    border-radius: 21px;
+    background: linear-gradient(145deg, #6cc5f2, #5ba6cb);
+    box-shadow:  26px 26px 35px #467f9c, 
+             -26px -26px 35px #84f1ff;
+}
+.main-left .tt{
+    width: 900px;
+    font-size: 30px;
+    height: 95px;
+    line-height: 95px;
+}
+.main-left .tt a{
+    color: antiquewhite;
+}
+.main-left .ul2{
+    float: right;
+    margin-top: -600px;
+}
+.main-left .tbox2{
+    width: 700px;
+    height: 95px;
+    margin-bottom: 5px;
+    /* background-color: rgb(39, 115, 182); */
+}
+
+/* main中右部分 */
+.main-right{
+    width: 390px;
+    height: 600px;
+    margin-top: -100px;
+    /* background-color: aqua; */
+    float: right;
+    
+}
+
+
+
+
+@keyframes run-top{
+    from{
+        transform: rotateZ(0deg);
+        color: rgb(250, 122, 36);
+
+    }
+    50%{
+        transform: rotateZ(180deg);
+        color: rgb(248, 178, 132);
+    }
+    to{
+        transform: rotateZ(360deg);
+        color: rgb(252, 123, 38);
+    }
+}
+@keyframes bumen{
+    from{
+        height: 50px;
+    }
+    33%{
+        height: 100px;
+    }
+    66%{
+        height: 150px;
+    }
+    to{
+        height: 200px;
+    }
+}
+@keyframes text {
+    from{
+        transform: scale(1);
+    }
+
+    to{
+        transform: scale(1.3);
+    }
+}
