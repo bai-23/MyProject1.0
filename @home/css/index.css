@@ -137,15 +137,15 @@
     /* background-color: antiquewhite; */
     margin: 0 auto;
     border-radius: 5px;
-    background: linear-gradient(145deg, #77f3ce, #85a99e);
-    box-shadow:  7px 7px 14px #7ea096, 
-             -7px -7px 14px #aad8ca;
+    /* background: linear-gradient(145deg, #77f3ce, #85a99e); */
+    box-shadow:  7px 7px 14px #f2f7f5, 
+             -7px -7px 14px #edf1f0;
 }
 /* 左侧导航条 */
 .mainuse .lefta{
     width: 300px;
     height: 167px;
-    background-color: white;
+    background-color: rgba(0, 0, 0, 0.5);
     text-align: center;
     line-height: 167px;
     font-size: 40px;
@@ -153,23 +153,25 @@
 }
 .mainuse .faimg{
     /* float: left; */
-    display: inline-block;
+    /* display: inline-block; */
     position: relative;
+    z-index: 1;
+    display: none;
 }
 .mainuse .lefta i{
-    color: black;
+    color: rgba(0, 0, 0, 0.7);
 }
 .a1 .faimg{
     left: 75px;
-    color: white;
 }
 .a2 .faimg{
     left: 85px;
-    color: white;
 }
 .a3 .faimg{
     left: 103px;
-    color: white;
+}
+.lefta:hover i{
+    display: inline;
 }
 .mainuse .left{
     font-weight: bolder;
@@ -178,7 +180,7 @@
 .mainuse .lefta:hover,
 .mainuse .left:hover,
 .mainuse li.active{
-    background-color: #99c2b5;
+    background-color: #cddad6;
     color: azure;
 }
 /* 右侧弹出层*/
@@ -188,7 +190,7 @@
     position: relative;
     top: -501px;
     right: -300px;
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.7);
     
 }
 .right-wrapper ul{
