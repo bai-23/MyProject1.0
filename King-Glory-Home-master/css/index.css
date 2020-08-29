@@ -1,0 +1,640 @@
+body {
+    /* line-height: 3;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: bold;
+    font-family: "Microsoft YaHei", Tahoma, "simsun", sans-serif; */
+    font: 14px/1.5 "Microsoft YaHei", Tahoma, "simsun", sans-serif;
+    color: #323235;
+    min-width: 1280px;
+    background: url("../img/bg.jpg") no-repeat;
+    /* 背景图片位置：横向中心对齐、纵向顶端对齐 */
+    background-position: center top;
+}
+
+
+/* 通用样式 */
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.icon {
+    background: url("../img/spr_block.png");
+    width: 24PX;
+    height: 24PX;
+    /* 行块级元素：排列方式按照行级元素排列，并且可以设置宽高 */
+    display: inline-block;
+    /* 行级元素的垂直对齐方式：中线对齐 */
+    vertical-align: middle;
+}
+
+.icon.n {
+    /* 背景图片的横纵坐标 */
+    background-position: -137px -68px;
+}
+
+.icon.h {
+    background-position: -163px -68px;
+}
+
+.icon.o {
+    background-position: -136px -5px;
+}
+
+.icon.lock {
+    background-position: -137px -36px;
+}
+
+
+/* 水平居中 */
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    height: 100%;
+}
+
+
+/* 头部 */
+
+.header {
+    height: 84px;
+    background: rgba(0, 0, 0, 0.8);
+    color: #c9c9dd;
+}
+
+
+/* 导航栏 */
+
+.header .main-nav {
+    /* width: 1200px;
+    margin: 0 auto; */
+    height: 100%;
+}
+
+
+/* 网站标题 */
+
+.header .main-nav .logo a {
+    width: 200px;
+    height: 54px;
+    background: url("../img/logo.png");
+    display: block;
+    margin-top: 16px;
+    /* text-indent：文本块中首行文本的缩进 */
+    text-indent: -999px;
+}
+
+
+/* 列表 */
+
+.header .main-nav .menu {
+    height: 100%;
+    margin-left: 36px;
+}
+
+.header .main-nav .menu li {
+    float: left;
+    width: 110px;
+    /* 文字居中 */
+    height: 100%;
+    text-align: center;
+    line-height: 30px;
+    font-size: 18px;
+}
+
+.header .main-nav .menu li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    padding-top: 20px;
+}
+
+.header .main-nav .menu li span {
+    display: block;
+    font-size: 12px;
+}
+
+.header .main-nav .menu li.active,
+.header .main-nav .menu li:hover {
+    color: #e4b653;
+    background: url("../img/spr_block.png");
+}
+
+
+/* 登录 */
+
+.header .main-nav .login {
+    margin-top: 21px;
+    cursor: pointer;
+}
+
+.header .main-nav .login img {
+    width: 44px;
+    height: 44px;
+    border: 1px solid #d9ad50;
+    box-sizing: border-box;
+    border-radius: 22px;
+}
+
+.header .main-nav .login div {
+    margin-left: 10px;
+}
+
+.header .main-nav .login .welcome {
+    font-size: 16px;
+    color: #fff;
+}
+
+.header .main-nav .login .description {
+    font-size: 14px;
+    display: block;
+    color: #858792;
+}
+
+
+/* 二级菜单 */
+
+.header .sub-nav {
+    background: rgba(0, 0, 0, 0.7);
+    height: 0;
+    overflow: hidden;
+    /* CSS3：过渡 */
+    transition: 0.3s;
+}
+
+.header:hover .sub-nav {
+    height: 285px;
+}
+
+.header .sub-nav .menus {
+    margin-left: 346px;
+    line-height: 30px;
+    text-align: center;
+    padding-top: 15px;
+}
+
+.header .sub-nav .menus li {
+    float: left;
+    width: 110px;
+}
+
+.header .sub-nav .menus li a {
+    display: block;
+    /* 强制不换行 */
+    white-space: nowrap;
+}
+
+.header .sub-nav .menus li a:hover {
+    color: #f3c258;
+    /* text-decoration：设置文本的修饰：下划线、上划线、删除线... */
+    text-decoration: underline;
+}
+
+
+/* 专题区域 */
+
+.subject {
+    display: block;
+    margin-top: 6px;
+    margin-bottom: 6px;
+    height: 440px;
+}
+
+
+/* 主区域 */
+
+.main {
+    height: 342px;
+    /* no-repeat：图片不重复 */
+    background: url("../img/rotate_bg.png") no-repeat;
+    color: #b1b2be;
+}
+
+
+/* 下载区域 */
+
+.main .download-area {
+    width: 236px;
+    height: 100%;
+}
+
+.main .download-area .download {
+    width: 236px;
+    height: 128px;
+    background-position: 0 -219px;
+}
+
+.main .download-area .vs {
+    width: 236px;
+    height: 106px;
+    background-position: 0 -350px;
+}
+
+.main .download-area .exp {
+    width: 236px;
+    height: 108px;
+    background-position: 0 -461px;
+}
+
+
+/* 横幅 */
+
+.main .banner-container {
+    width: 604px;
+    height: 100%;
+    overflow: hidden;
+}
+
+
+/* 图片列表 */
+
+.main .banner-container .banner-img {
+    width: 500%;
+    height: 298px;
+    transition: 0.3s;
+}
+
+.main .banner-container .banner-img li {
+    float: left;
+    width: 604px;
+    height: 298px;
+}
+
+.main .banner-container .banner-img li a,
+.main .banner-container .banner-img li img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+
+/* 横幅标题 */
+
+.main .banner-container .banner-title {
+    height: 44px;
+}
+
+.main .banner-container .banner-title li {
+    width: 20%;
+    height: 44px;
+    float: left;
+    text-align: center;
+    line-height: 44px;
+    cursor: pointer;
+}
+
+.main .banner-container .banner-title li.active {
+    color: #f3c258;
+    background: rgba(255, 255, 255, 0.15);
+}
+
+
+/* 信息区域 */
+
+.main .news-container {
+    width: 325px;
+    height: 342px;
+    padding: 0 17px;
+}
+
+
+/* 信息标题 */
+
+.main .news-container .title-container {
+    height: 49px;
+    border-bottom: 1px solid #000;
+}
+
+.main .news-container .title-container li {
+    width: 52px;
+    float: left;
+    line-height: 49px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.main .news-container .title-container li.active {
+    border-bottom: 3px solid #f3c258;
+    color: #f3c258;
+}
+
+
+/* 信息内容 */
+
+.main .news-container .news-banner {
+    margin-top: 2px;
+    overflow: hidden;
+}
+
+.main .news-container .news-banner .news-blocks {
+    width: 500%;
+    transition: 0.3s;
+}
+
+.main .news-container .news-banner .news-blocks .newslist {
+    width: 325px;
+    float: left;
+}
+
+.main .news-container .news-banner .news-blocks .newslist li {
+    margin-bottom: 11px;
+    overflow: hidden;
+}
+
+.main .news-container .news-banner .news-blocks .newslist li a {
+    width: 270px;
+    float: left;
+    overflow: hidden;
+    white-space: nowrap;
+    /* 溢出的文字部分使用3个圆点表示 */
+    text-overflow: ellipsis;
+}
+
+.main .news-container .news-banner .news-blocks .newslist li span {
+    float: right;
+}
+
+
+/* li:first-child：选中li下的第一个子元素 */
+
+.main .news-container .news-banner .news-blocks .newslist li:first-child {
+    width: 294px;
+    height: 36px;
+    line-height: 36px;
+    padding: 0 15px;
+    margin-top: 18px;
+    text-align: center;
+    color: #f3c258;
+    background: #414046;
+    font-size: 18px;
+}
+
+.main .news-container .news-banner .news-blocks .newslist li:first-child a {
+    display: block;
+    /* 撤销浮动 */
+    float: none;
+    width: 100%;
+}
+
+
+/* 广告区域 */
+
+.adv {
+    margin-top: 28px;
+    margin-bottom: 34px;
+    height: 134px;
+}
+
+.adv a {
+    float: left;
+    width: 291px;
+    height: 134px;
+    margin-right: 12px;
+    overflow: hidden;
+}
+
+
+/* a:last-child：最后一个当前元素a */
+
+.adv a:last-child {
+    margin-right: 0;
+}
+
+.adv a img {
+    width: 100%;
+    height: 100%;
+    transition: 0.3s;
+}
+
+.adv a img:hover {
+    /* scale()：大小缩放 倍数 */
+    transform: scale(1.1);
+}
+
+
+/* 页脚 */
+
+.footer {
+    height: 362px;
+    background: url("../img/bg_footer.jpg");
+    padding-top: 80px;
+    box-sizing: border-box;
+}
+
+.footer .footer-logo {
+    border-bottom: 2px solid #d4d4d4;
+    padding-bottom: 10px;
+}
+
+.footer .footer-logo a:first-child {
+    width: 285px;
+    height: 64px;
+    display: inline-block;
+    background: url("../img/spr.png") no-repeat;
+}
+
+.footer .footer-logo a:last-child {
+    width: 70px;
+    height: 64px;
+    display: inline-block;
+    background: url("../img/spr.png") no-repeat -285px 0px;
+}
+
+.footer .footer-links {
+    margin-top: 12px;
+    font-size: 12px;
+    color: #666;
+}
+
+.footer .footer-links p {
+    margin: 12px 0;
+}
+
+.footer .footer-links .footer-left-links {
+    width: 525px;
+}
+
+.footer .footer-links .footer-left-links span {
+    margin-right: 12px;
+}
+
+.footer .footer-links .footer-right-links {
+    width: 630px;
+}
+
+.footer-right-links img {
+    width: 13px;
+    height: 15px;
+    /* 行级元素的垂直对齐方式：中线对齐 */
+    vertical-align: middle;
+}
+
+
+/* 登录蒙层区域 */
+
+.login-area {
+    /* fixed：固定定位 相对于可视窗口定位 display自动设置为block */
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    left: 0;
+    top: 0;
+    /* z-index：设置元素的堆叠顺序（层级） */
+    z-index: 2;
+    display: none;
+}
+
+.login-area .center {
+    position: fixed;
+    width: 530px;
+    height: 254px;
+    background: url("../img/loginform.jpg");
+    left: 50%;
+    top: 50%;
+    margin-left: -265px;
+    margin-top: -127px;
+}
+
+.login-area .center .weixin,
+.login-area .center .qq {
+    position: absolute;
+    width: 197px;
+    height: 46px;
+}
+
+.login-area .center .weixin {
+    top: 143px;
+    left: 60px;
+}
+
+.login-area .center .qq {
+    top: 143px;
+    left: 272px;
+}
+
+.login-area .center .close {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+}
+
+
+/* 右侧悬浮区 */
+
+.right-nav {
+    position: fixed;
+    width: 254px;
+    height: 494px;
+    right: 0;
+    top: 50%;
+    margin-top: -247px;
+    background: url("../img/r_navBg.png");
+}
+
+.right-nav .hero {
+    position: absolute;
+    width: 165px;
+    height: 145px;
+    top: 15px;
+    left: 24px;
+    background: url("../img/r_dj.png");
+}
+
+.right-nav .hero a {
+    position: absolute;
+    width: 88px;
+    top: 37px;
+    left: 12px;
+    color: #62401b;
+    /* 字体加粗 */
+    font-weight: bold;
+}
+
+.right-nav .menus {
+    position: absolute;
+    width: 117px;
+    top: 160px;
+    left: 85px;
+}
+
+.right-nav .menus li {
+    position: relative;
+    overflow: hidden;
+}
+
+.right-nav .menus li:hover {
+    /* visible：可见的 overflow的默认值 */
+    overflow: visible;
+}
+
+.right-nav .menus li:first-child img {
+    width: 117px;
+    height: 117px;
+    border: solid #f3c258;
+    box-sizing: border-box;
+    display: block;
+}
+
+.right-nav .menus li .weibo,
+.right-nav .menus li .weixin,
+.right-nav .menus li .master {
+    width: 117px;
+    height: 38px;
+    display: block;
+}
+
+.right-nav .menus li .weibo {
+    background: url("../img/spr2.png") no-repeat -122px -120px;
+}
+
+.right-nav .menus li .weibo:hover {
+    background-position: -122px -240px;
+}
+
+.right-nav .menus li .weixin {
+    background: url("../img/spr2.png") no-repeat -122px -160px;
+}
+
+.right-nav .menus li .weixin:hover {
+    background-position: -122px -200px;
+}
+
+.right-nav .menus li .master {
+    background: url("../img/spr2.png") no-repeat -122px -417px;
+}
+
+.right-nav .menus li .master:hover {
+    background-position: -122px -458px;
+}
+
+.right-nav .menus li .sub-menu {
+    position: absolute;
+    width: 115px;
+    height: 144px;
+    left: -115px;
+    top: -66px;
+    text-align: center;
+    color: #dcdcdc;
+    font-size: 12px;
+    padding-top: 8px;
+    background: url("../img/spr2.png") no-repeat 0 -416px;
+}
+
+.right-nav .menus li .sub-menu span {
+    color: #cd974c;
+}
+
+.right-nav .menus li .sub-menu img {
+    width: 100px;
+}
