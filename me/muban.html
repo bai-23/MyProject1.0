@@ -1,0 +1,275 @@
+<!doctype html>
+
+<body >
+    
+        <!-- 侧边导航栏 -->
+        <div class="main_sidebar">
+            <div class="side-overlay" uk-toggle="target: #wrapper ; cls: collapse-sidebar mobile-visible"></div>
+
+            <!-- 时间 -->
+            <div class="sidebar-header">
+
+                <h5 class="timedisp"> [Time]</h5>
+                <span class="btn-close" uk-toggle="target: #wrapper ; cls: collapse-sidebar mobile-visible"></span>
+            </div>
+            <!-- 导航 -->
+            <div class="sidebar">
+                <div class="sidebar_innr" data-simplebar>
+
+                    <div class="sections">
+                        <h3> 快速浏览 - 给你最好的体验</h3>
+                        <ul>
+                            <li> <a href="index.html"> <i class="uil-home-alt"></i> <span> 资源概览 </span> </a></li>
+                            <li> <a href="./code.html"> 
+                                <i class="uil-code"></i> <span> 源码专区 </span> </a></li>
+                            <li> <a href="./proxy.html"> <i class="uil-coins"></i> <span> 代理专区</span> </a></li>
+                            <li> <a href="./viau.html"> <i class="uil-music"></i> <span>  音视频 </span> </a></li>
+                            <li> <a href="./blog.html"> <i class="uil-book-open"></i> <span> 学习专区</span> </a></li>
+                            <li> <a href="./cvm.html"> <i class="uil-minus-path"></i> <span> 更多资源 </span> </a></li>
+                        </ul>
+                    </div>
+
+
+                    <div class="sections">
+                        <ul>
+                            <li> <a href="./send.html"><i class="uil-file-alt"></i> <span> 投稿传送门 </span> </a></li>
+                            <li> <a href="./helpdocument.html"><i class="uil-info-circle"></i> <span> 教程文档  </span></a></li>
+                            </li>
+                            
+                        </ul>
+                    </div>
+
+                    <div id="foot">
+                        <div class="foot-content">
+                            <p><strong>Just Keep Live.</strong></p>
+                        </div>
+
+                    </div>
+
+
+
+                </div>
+
+
+            </div>
+        </div>
+
+        <!-- 导航头 -->
+        <div id="main_header">
+            <header>
+                <!-- Logo-->
+                <i class="header-traiger uil-bars"
+                    uk-toggle="target: #wrapper ; cls: collapse-sidebar mobile-visible"></i>
+
+                <!-- Logo-->
+                <div id="logo">
+                    <a href="./index.html"> <img src="assets/images/logo.png" alt=""></a>
+                </div>
+
+                <!-- 广告栏 -->
+                <div class="guanggao2 uk-position-relative uk-visible-toggle  uk-width-1-1 uk-alert-primary" tabindex='-1' uk-alert
+                    uk-slideshow="animation: scale;  autoplay: true; velocity: 0.7; max-height: 55; autoplay-interval: 100">
+
+                    <!-- <a class="uk-alert-close" uk-close></a> -->
+
+                    <ul class="uk-slideshow-items slidehead2">
+                        <li class="slide-li">
+                            <div class="uk-position-center uk-position-small uk-text-center">
+                                <span uk-slideshow-parallax="x: 200,-200" class="head-ads2">[loading]</span>
+                            </div>
+                        </li>
+                        <li class="slide-li">
+                            <div class="uk-position-center uk-position-small uk-text-center">
+                                <span uk-slideshow-parallax="x: 200,-200" class="head-ads2">[loading]</span>
+                            </div>
+                        </li>
+                        <li class="slide-li">
+                            <div class="uk-position-center uk-position-small uk-text-center">
+                                <span uk-slideshow-parallax="x: 200,-200" class="head-ads2">[loading]</span>
+                            </div>
+                        </li>
+                        <li class="slide-li">
+                            <div class="uk-position-center uk-position-small uk-text-center">
+                                <span uk-slideshow-parallax="x: 200,-200" class="head-ads2">[loading]</span>
+                            </div>
+                        </li>
+
+                    </ul>
+                
+                </div>
+                
+                <!-- user icons -->
+                <div class="head_user">
+                    
+                    <!-- 充电下拉框 -->
+                    <a href="javascript::;" class="btn-upgrade uk-visible@s uk-open"> <i class="uil-bolt-alt"></i> </a>     
+                    <div uk-dropdown="pos: top-right;mode:click ; animation: uk-animation-slide-bottom-small"
+                        class="dropdown-notifications">
+
+                        <!-- notivication header -->
+                        <div class="dropdown-notifications-headline">
+                            <h4>您的打赏是站站坚持的动力</h4>
+                        </div>
+
+                        <!-- notification contents -->
+                        <div class="dropdown-notifications-content uk-flex uk-flex-middle uk-flex-center text-center">
+
+
+                            <div class="uk-flex uk-flex-column choose-upload  text-center">
+                                <img src="assets/images/logo.png" width="140" class="m-auto" alt="">
+                                <p class="my-3">一个实用的个人收录网站<br><hr>
+                                    <img src="assets/images/banner/code.jpg" width="100" class="m-auto" alt="">
+                                    <br>如果你喜欢本站 <br> 在这儿打赏站站
+                                </p>
+
+                                <a href="#" class="uk-text-muted mt-3 uk-link usr-cont"
+                                    uk-toggle="target: .choose-upload ;  animation: uk-animation-slide-right-small, uk-animation-slide-left-medium; queued: true">
+                                    Or 联系我 </a>
+                            </div>
+
+                            <div class="uk-flex uk-flex-column choose-upload" hidden>
+                                <i class="uil-import icon-large text-muted"></i>
+                                <p class="my-3"> E-mail：zihei@protonmail.com <br> QQ：0000 </p>
+                                
+                                <a href="#" class="uk-text-muted mt-3 uk-link"
+                                    uk-toggle="target: .choose-upload ; animation: uk-animation-slide-left-small, uk-animation-slide-right-medium; queued: true">
+                                    Or 继续发电 </a>
+                            </div>
+
+
+
+                        </div>
+                        <hr class="m-0">
+                        <div class="text-center uk-text-small py-2 uk-text-muted"> 自愿打赏或捐助，站站不承诺任何责任和义务。
+                        </div>
+                    </div>
+
+                    <!-- 扩展  -->
+                    <a href="#" class="opts_icon uk-visible@s"> <i class="uil-apps"></i> </a>
+
+                    <!-- 扩展下拉框 -->
+                    <div uk-dropdown="pos: top;mode:click ; animation: uk-animation-scale-up" class="icon-browse">
+
+                        <a href="constructing.html" class="icon-menu-item"> <i class="uil-shop"></i> 仪表盘 </a>
+                        <a href="constructing.html" class="icon-menu-item"> <i class="uil-envelope-alt"></i> 信箱 </a>
+                        <a href="constructing.html" class="icon-menu-item"> <i class="uil-bookmark"></i> 标签 </a>
+                        <a href="constructing.html" class="icon-menu-item"> <i class="uil-shopping-basket"></i> 购物栏 </a>
+                        <a href="constructing.html" class="icon-menu-item"> <i class="uil-shield-check"></i> 隐私 </a>
+                        <a href="constructing.html" class="icon-menu-item"> <i class="uil-bolt-alt"></i> VOP </a>
+                        <a href="constructing.html" class="more-app"> More </a>
+                    </div>
+
+
+                    <!-- 站长信箱 -->
+                     <a href="#" class="opts_icon"> <i class="uil-envelope-alt"></i> <span>1</span> </a> 
+                    <!-- 站长信箱 -->
+                    <div uk-dropdown="pos: top-right;mode:click ; animation: uk-animation-slide-bottom-small"
+                        class="dropdown-notifications">
+                        &nbsp;
+                        <div class="dropdown-notifications-headline">
+                            <h4>站 站 | 消 息 盒 子</h4>
+                            <a href="#">
+                                <i class="icon-feather-settings" uk-tooltip="title: 盒子设置 ; pos: left"></i>
+                            </a>
+                        </div>
+                        <div class="dropdown-notifications-content" data-simplebar>
+                            <ul>
+                                <!-- <li class="notifications-not-read">
+                                    <a href="#">
+                                        <span class="notification-avatar">
+                                            <img src="assets/images/avatars/avatar-1.jpg" alt="">
+                                        </span>
+                                        <div class="notification-text notification-msg-text">
+                                            <strong>置顶消息</strong><br>
+                                            <p>
+                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;本站资源来自互联网，仅供用于学习和交流，<strong>请勿用于商业用途</strong>。
+                                                如有侵权、不妥之处，请联系站长并出示版权证明以便删除。敬请谅解！
+                                                <br>
+                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;侵权删帖/违法举报/广告合作等事物请联系邮箱：<strong>zihei@protonmail.com</strong>
+                                            </p>
+                                            <span class="time-ago"> 2020-12-31 </span>
+                                        </div>
+                                    </a>
+                                </li> -->
+                                
+                                <li class="notifications-not-read">
+                                    <a href="#">
+                                        <span class="notification-avatar">
+                                            <img src="assets/images/avatars/avatar-1.jpg" alt="">
+                                        </span>
+                                        <div class="notification-text notification-msg-text">
+                                            <strong>来自菜鸡 站站</strong><br>
+                                            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                由于站站技术太菜，本站资源均通过盘分享，
+                                                站站会尽快升级下载体验！<hr>
+                                                <strong>下载方法</strong><br>
+                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;点击“获取”按钮，自动粘贴wang盘链接或提取码即可提取。
+                                            </p>
+                                            <span class="time-ago"> 2021-01-01 </span>
+                                        </div>
+                                    </a>
+                                </li>
+                                
+                            </ul>
+
+                        </div>
+                        <div class="dropdown-notifications-footer">
+                            <a href="#"> 查看更多 <i class="icon-line-awesome-long-arrow-right"></i> </a>
+                        </div>
+
+
+                    </div> 
+
+                    <!-- 站长信息 -image -->
+                    <a class="opts_account"> 
+                        <main>
+                            <div class="atom">
+                                <div class="electron"></div>
+                                <div class="electron-alpha"></div>
+                                <div class="electron-omega"></div>
+                            </div>
+                        </main>
+                    </a>
+                    <!-- 站长信息下拉框 -->
+                    <div uk-dropdown="pos: top-right;mode:click ; animation: uk-animation-slide-bottom-small"
+                        class="dropdown-notifications small">
+
+                        <!-- 站长名 -->
+                        <a href="#">
+
+                            <div class="dropdown-user-details">
+                                <div class="dropdown-user-avatar">
+                                    <img src="./assets/images/avatars/avatar-1.jpg" alt="美女">
+                                </div>
+                                <div class="dropdown-user-name">
+                                    站站 Okid <span> 好家伙 <i class="uil-check"></i> </span>
+                                </div>
+                            </div>
+                        </a>
+                
+                        <!-- User menu -->
+
+                        <ul class="dropdown-user-menu">
+                            <li><a href="#"> <i class="uil-cog"></i> 找我</a></li>
+                            <li>
+                                <a href="#" id="night-mode" class="btn-night-mode">
+                                    <i class="icon-feather-moon"></i> 日间模式（待）
+                                    <span class="btn-night-mode-switch">
+                                        <span class="uk-switch-button"></span>
+                                    </span>
+                                </a>
+                            </li>
+                            <div class="menu-divider">
+                                <li><a href="#"> <i class="icon-feather-help-circle"></i> 帮助文档</a>
+                                </li>
+                                <li><a href="#"> <i class="icon-feather-log-out"></i> 别走</a>
+                                </li>
+                        </ul>
+                    </div>
+                </div>
+            </header>
+        </div>
+
+        <script src="./assets/js/timemaker.js"></script>
+</body>
+

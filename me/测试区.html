@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js"></script>
+    <button id="copy-wechat-btn" data-clipboard-text="wx-number">复制微信号</button>
+ 
+    
+    <script>
+        
+        var btns = document.getElementById('copy-wechat-btn');
+        var clipboard = new ClipboardJS(btns);
+        clipboard.on('success', function(e) {
+            //成功后执行这里
+        });
+        clipboard.on('error', function(e) {
+        console.log(e);
+        });
+    
+         
+
+    </script>
+
+
+</body>
+</html>

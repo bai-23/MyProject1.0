@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+
+    <center>
+       
+        <table border="1px solid">
+            <tr>
+                <th>姓名</th>
+                
+              </tr>
+        </table>
+        <!-- <input type="button" value="加载数据" /> -->
+    </center>
+
+
+<script src="../assets/js/jquery-3.3.1.min.js"></script>
+<script>
+    $(function(){
+
+        $.ajax({
+            url: './db/test1.json',
+            type: 'get',
+            dataType: 'json',
+
+            success: function(datas){
+                var tbhtml = "<tr><th>姓名</th><th>";
+                for(var i = 0;i<datas.length;i++){
+                        tbhtml+="<tr><td>"+datas[i].name+"</td><td>";
+                }
+
+                $('table:eq(0)').html(tbhtml);
+            }
+        })
+    })
+</script>
+
+        
+</body>
+</html>
