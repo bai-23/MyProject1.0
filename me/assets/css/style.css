@@ -8152,19 +8152,13 @@ header .btn-upload:hover , header .btn-upgrade:hover {
 /* 页脚 */
 .footbar{
   padding: 20px 0;
+  background-color: rgba(244, 165, 96, 0.055);
 }
 
-.footbar img{
-  position: relative;
-  /* bottom: 50px; */
-  left: 240px;
-  width: 200px;
-
-}
 .footbar p{
   font-size: 15px;
 }
-
+.footbar h3 span,
 .footbar .zhuyi{
   font-size: 12px;
 }
