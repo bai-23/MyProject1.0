@@ -4,6 +4,7 @@ html {
   /* letter-spacing: .2px; */
     background: url("../../assets/images/blue.jpg")  no-repeat  !important;
     background-size: 100% 100% !important;
+    opacity: 0.97;
 } 
 h6 {
   font-weight: 600 ;
@@ -7209,7 +7210,7 @@ header .btn-upload:hover , header .btn-upgrade:hover {
   /* margin: auto; */
 }
 .main_content_inner .net-ul .netB{
-  width: 500px;
+  width: 530px;
   height: 250px;
   white-space: nowrap;
   overflow: hidden;
@@ -8056,26 +8057,20 @@ header .btn-upload:hover , header .btn-upgrade:hover {
 }
 
 /* 导航头 */
-.guanggao2,
+
 .guanggao{
   margin-top: 20px;
   height: 50px;
   background-color: rgba(39, 82, 122, 0.11);
-  border-radius: 5px;
-  
+  border-radius: 10px;
 }
-.guanggao2{
-  background-color: rgba(255, 255, 255, 0);
-  width: 200px;
-}
-.slidehead2,
+
 .slidehead{
   height: 55px;
-  /* position: relative;
-  top: 0; */
+  
 } 
 
-.slidehead2 .slide-li,
+
 .slidehead .slide-li{
 
   height: 55px;
@@ -8085,10 +8080,7 @@ header .btn-upload:hover , header .btn-upgrade:hover {
 .slidehead .slide-li a{
   color: #d6d076d8 !important;
 }
-.slidehead2 .slide-li span{
-  color: #ffffff !important;
-  cursor: default;
-}
+
 
 
 
@@ -8151,8 +8143,9 @@ header .btn-upload:hover , header .btn-upgrade:hover {
 
 /* 页脚 */
 .footbar{
-  padding: 20px 0;
-  background-color: rgba(244, 165, 96, 0.055);
+  padding: 35px 0 !important;
+  background-color: rgb(5, 5, 5);
+  border-top: 1px solid rgba(253, 252, 249, 0.37);
 }
 
 .footbar p{
@@ -8160,5 +8153,6 @@ header .btn-upload:hover , header .btn-upgrade:hover {
 }
 .footbar h3 span,
 .footbar .zhuyi{
+
   font-size: 12px;
 }
